@@ -8,7 +8,7 @@ import javax.swing.*;
 
 public class BarnsleyFern extends JPanel {
 
-    private final int width = 750, height = 750;
+    private final int width = 700, height = 700;
     private final BufferedImage img;
 
     public BarnsleyFern() {
@@ -27,17 +27,17 @@ public class BarnsleyFern extends JPanel {
             double tempX, tempY;
 
             if (r <= 0.01) {
-                tempX = 0;
-                tempY = 0.2 * y - 0.12;
+                tempX = 0 * x + 0 * y;
+                tempY = 0.1 * x + 0.2 * y;
             } else if (r <= 0.07) {
                 tempX = 0.2 * x - 0.31 * y;
-                tempY = 0.255 * x + 0.245 * y + 0.29;
+                tempY = 0.25 * x + 0.245 * y + 0.35;
             } else if (r <= 0.15) {
-                tempX = -0.15 * x + 0.24 * y;
-                tempY = 0.25 * x + 0.2 * y + 0.68;
+                tempX = -0.125 * x + 0.23 * y;
+                tempY = 0.25 * x + 0.2 * y + 0.8;
             } else {
-                tempX = -0.93 * x + 0.035 * y;
-                tempY = -0.07 * x + 0.82 * y + 1.6;
+                tempX = -0.93 * x + 0.04 * y;
+                tempY = -0.05 * x + 0.82 * y + 1.8;
             }
             x = tempX;
             y = tempY;
